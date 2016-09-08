@@ -5,13 +5,13 @@
       "model": "Rogue",
       "year": "2006",
       "price": "8999",
-      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+      "description": "This is a 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything!"
     },
     {
       "make": "BMW",
       "model": "325i",
       "year": "2013",
-      "price": "19000",
+      "price": "13000",
       "description": "This is a 2013 BMW 325i with only 20000 miles on it. You'll love it!"
     },
     {
@@ -20,6 +20,27 @@
       "year": "2009",
       "price": "5999",
       "description": "This is a 2006 Honda Civic with only 30000 miles on it. Great car, great price!"
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": "2007",
+      "price": "8999",
+      "description": "This is a 2007 Toyota Camry with only 16000 miles on it.  Don't miss out!"
+    },
+    {
+      "make": "Hyundai",
+      "model": "Sonata",
+      "year": "2012",
+      "price": "11000",
+      "description": "This is a 2012 Hyundai Sonata with only 19000 miles on it. Oh my!"
+    },
+    {
+      "make": "Dodge",
+      "model": "Ram",
+      "year": "2009",
+      "price": "9999",
+      "description": "This is a 2009 Dodge Ram with only 60000 miles on it. C'mon, just go for it!"
     }
   ]
 }
