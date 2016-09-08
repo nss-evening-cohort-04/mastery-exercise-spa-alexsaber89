@@ -6,6 +6,20 @@
       "year": "2006",
       "price": "8999",
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "BMW",
+      "model": "325i",
+      "year": "2013",
+      "price": "19000",
+      "description": "This is a 2013 BMW 325i with only 20000 miles on it. You'll love it!"
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "year": "2009",
+      "price": "5999",
+      "description": "This is a 2006 Honda Civic with only 30000 miles on it. Great car, great price!"
     }
   ]
 }
