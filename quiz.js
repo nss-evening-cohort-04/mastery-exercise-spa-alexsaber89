@@ -1,17 +1,17 @@
 var container = document.getElementById("container");
 
 function getJSON() {
-	var data = JSON.parse(this.responseText);
-	var cars = data.cars;
-	generateCards(cars);
+  var data = JSON.parse(this.responseText);
+  var cars = data.cars;
+  generateCards(cars);
 }
 
 function generateCards(data) {
-	var carInfo = "";
-	for (var i = 0; i < data.length; i++) {
-		carInfo += data[i].description + "<br />";
-	}
-	container.innerHTML = carInfo;
+  var carInfo = "";
+  for (var i = 0; i < data.length; i++) {
+    carInfo += data[i].description + "<br />";
+  }
+  container.innerHTML = carInfo;
 }
 
 
