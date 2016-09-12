@@ -10,7 +10,7 @@ var CarLot = (function () {
     for (var i = 0; i < data.length; i++) {
         counter++;
         carInfo += "<div class='col-md-4'>";
-          carInfo += "<div class='card'>";
+          carInfo += "<div class='card smallBorder'>";
             carInfo += "<article>" + data[i].make + "</article>";
             carInfo += "<section>" + data[i].model + "</section>";
             carInfo += "<section>" + data[i].year + "</section>";
@@ -25,6 +25,7 @@ var CarLot = (function () {
     }
     carInfo += "</div>";//close container
     container.innerHTML = carInfo;
+    CarLot.activateEvents();
   }
 
   return {
