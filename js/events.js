@@ -17,16 +17,14 @@ var CarLot = (function(events) {
     event.currentTarget.classList.add("bigBorder");
     userInput.focus();
     userInput.value = "";
-    events.setBio();
+    var target = event.currentTarget;
+    userInput.onkeyup = function(){
+      events.setBio(target);
+    }
   },
-  events.setBio = function() {
-    clickedBio = event.currentTarget.querySelector(".description");
-    console.log(clickedBio.innerHTML);
-    // var bioText = clickedBio.innerHTML;
-    // console.log(bioText);
-    // bioText = userInput.value;
+  events.setBio = function(e) {
+    clickedBio = e.querySelector(".description");
     clickedBio.innerHTML = userInput.value;
   }
-  userInput.addEventListener("keyup",events.setBio);
   return events;
 })(CarLot);
