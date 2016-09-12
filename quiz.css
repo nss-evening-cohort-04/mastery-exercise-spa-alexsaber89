@@ -1,0 +1,25 @@
+body {
+  font-family: 'Abel', sans-serif;
+  font-size: 2em;
+}
+
+.container-fluid,
+.navbar-form,
+.navbar-left,
+#bs-example-navbar-collapse-1 {
+  padding: 0;
+}
+
+.card {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+article,
+section {
+  text-align: center;
+}
+
+article {
+  font-size: 2em;
+}
