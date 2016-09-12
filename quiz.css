@@ -11,8 +11,16 @@ body {
 }
 
 .card {
-  border: 1px solid black;
   margin-bottom: 15px;
+}
+
+.smallBorder {
+  border: 1px solid black;
+}
+
+.bigBorder {
+  border: 2px solid black;
+  background-color: lightgrey;
 }
 
 article,
