@@ -3,7 +3,6 @@ var CarLot = (function(events) {
   var container = document.getElementById("container");
   var clickedBio = "";
   var containerEl = "";
-  userInput.addEventListener("keyup",CarLot.setBio);
 
   events.activateEvents = function() {
     containerEl = document.querySelectorAll(".card");
@@ -22,11 +21,12 @@ var CarLot = (function(events) {
   },
   events.setBio = function() {
     clickedBio = event.currentTarget.querySelector(".description");
-    console.log(userInput.value);
+    console.log(clickedBio.innerHTML);
     // var bioText = clickedBio.innerHTML;
     // console.log(bioText);
     // bioText = userInput.value;
-    // clickedBio.innerHTML = userInput.value;
+    clickedBio.innerHTML = userInput.value;
   }
+  userInput.addEventListener("keyup",events.setBio);
   return events;
 })(CarLot);
