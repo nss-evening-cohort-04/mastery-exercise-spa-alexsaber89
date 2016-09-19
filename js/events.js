@@ -1,30 +1,18 @@
-var CarLot = (function(events) {
-  var userInput = document.querySelector(".form-control");
-  var container = document.getElementById("container");
-  var clickedBio = "";
-  var containerEl = "";
+var CarLot = (function(CarLot) {
+  CarLot.userInput = document.querySelector(".form-control");
+  CarLot.container = document.getElementById("container");
+  CarLot.clickedCard = "";
+  CarLot.cards = "";
 
-  events.activateEvents = function() {
-    containerEl = document.querySelectorAll(".card");
-    for (var j = 0; j < containerEl.length; j++) {
-      containerEl[j].addEventListener("click", CarLot.borderFunction);
+  CarLot.activateEvents = function() {
+    CarLot.cards = document.querySelectorAll(".card");
+    for (var j = 0; j < CarLot.cards.length; j++) {
+      CarLot.cards[j].addEventListener("click", CarLot.resetClickStyles);
     }
+    CarLot.userInput.addEventListener("keyup",CarLot.setBio);
   },
-  events.borderFunction = function() {
-    for (var k= 0; k < containerEl.length; k++) {
-      containerEl[k].classList.remove("bigBorder");
-    }
-    event.currentTarget.classList.add("bigBorder");
-    userInput.focus();
-    userInput.value = "";
-    var target = event.currentTarget;
-    userInput.onkeyup = function(){
-      events.setBio(target);
-    }
-  },
-  events.setBio = function(e) {
-    clickedBio = e.querySelector(".description");
-    clickedBio.innerHTML = userInput.value;
+  CarLot.getClickedCard = function() {
+    return CarLot.clickedCard;
   }
-  return events;
-})(CarLot);
+  return CarLot;
+})(CarLot || {});

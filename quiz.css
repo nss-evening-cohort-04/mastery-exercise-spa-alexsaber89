@@ -20,6 +20,9 @@ body {
 
 .bigBorder {
   border: 2px solid black;
+}
+
+.lightgrey {
   background-color: lightgrey;
 }
 

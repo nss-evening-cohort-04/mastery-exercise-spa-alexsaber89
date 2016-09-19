@@ -1,1 +1,1 @@
-CarLot.loadInventory();
+CarLot.loadInventory(CarLot.generateCards,CarLot.activateEvents);
