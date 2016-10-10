@@ -1,0 +1,37 @@
+body {
+  font-family: 'Abel', sans-serif;
+  font-size: 2em;
+}
+
+.container-fluid,
+.navbar-form,
+.navbar-left,
+#bs-example-navbar-collapse-1 {
+  padding: 0;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
+.smallBorder {
+  border: 1px solid black;
+}
+
+.bigBorder {
+  border: 2px solid black;
+}
+
+.lightgrey {
+  background-color: lightgrey;
+}
+
+article,
+section {
+  text-align: center;
+}
+
+article {
+  font-size: 2em;
+  font-weight: 900;
+}
